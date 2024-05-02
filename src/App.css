@@ -1,0 +1,334 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* border: 1px solid black; */
+}
+body {
+  background-color: rgb(179, 179, 179);
+  min-width: 750px;
+}
+.header {
+  width: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 15%;
+  box-shadow: 0px 10px 10px grey;
+}
+.registerBox {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.registerTable {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  font-size: 12px;
+  top:60px;
+}
+.registerRow p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.registerTable div {
+  display: flex;
+  justify-content: space-between;
+}
+.registerRow {
+  position: relative;
+}
+.registerRow input {
+  width: 75%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+#generated-id,
+#edit-id {
+  position: absolute;
+  left: 25%;
+}
+.background1 {
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px grey;
+  height: 450px;
+  width: 400px;
+  position: relative;
+  z-index: 0;
+}
+
+.background2 {
+  background-color: rgb(78, 78, 78);
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px grey;
+  height: 450px;
+  width: 400px;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+.symbol1 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 20px;
+  top: 30px;
+}
+.logo1 {
+  position: absolute;
+  width: 40%;
+  right: 20px;
+  top: 30px;
+}
+.tableTop {
+  background-color: rgb(230, 60, 43);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 80px;
+}
+.tableBox {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  padding: 20px;
+}
+#personelTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border-bottom: 0px solid rgb(233, 231, 232);
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: rgb(233, 231, 232);
+  width: 14, 3%;
+}
+tr:nth-child(n + 1) {
+  background-color: white;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+.black-b {
+  background-color: black;
+  color: white;
+  padding: 4px 2px;
+  margin: 4px 2px;
+  border: none;
+  cursor: pointer;
+}
+.addUser {
+  cursor: pointer;
+  height: 30px;
+  background-color: rgb(94, 96, 95);
+  color: white;
+  margin-top: 8px;
+  padding: 4px 2px;
+  font-size: 12px;
+  border: solid 2px black;
+  float: inline-end;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#noDel {
+  margin-top: 8px;
+  width: 20%;
+  height: 30px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  text-align: left;
+  padding: 4px 8px;
+  margin-right: 5px;
+  font-size: 12px;
+  border: none;
+}
+.noDel {
+  background-color: black;
+  color: white;
+  padding: 4px 2px;
+  margin-top: 8px;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  margin-right: 20px;
+}
+
+.delete-btn {
+  cursor: pointer;
+  margin: 0px 5px;
+  padding: 0px 3px;
+  border-radius: 5px;
+}
+.edit-btn {
+  cursor: pointer;
+  margin: 0px 5px;
+  padding: 0px 3px;
+  border-radius: 5px;
+}
+.tableTop > p {
+  float: left;
+  color: white;
+  padding: 8px 8px;
+  font-size: 14px;
+  font-family: system-ui;
+}
+.tableTop div {
+  display: flex;
+  justify-content: flex-end;
+}
+.delnote {
+  font-size: 10px;
+  color: white;
+  width: 99%;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.registerEditRow {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.registerEditRow input {
+  width: 75%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.registerEditRow {
+  position: relative;
+}
+
+button{
+  border-radius: 3px;
+}
+
+.adminCheck {
+  margin-left: 10px;
+}
+
+
+/* General Styling */
+.loginPage {
+  font-family: Arial, sans-serif; /* Choose a font that suits you */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  background-color: #f0f2f5; /* Soft background color */
+}
+
+/* Login Container Styling */
+.loginContainer {
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  height: 250px;
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Image Styling (Adjust to your images) */
+.loginSymbol {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 20px;
+  top: 30px;
+  z-index: -1;
+}
+
+.logo1 {
+  margin-bottom: 30px; 
+  max-width: 80%; /* Adjust as needed */
+  z-index: -1;
+  
+}
+
+
+.loginContainer form div {
+  margin-bottom: 15px;
+}
+
+.loginContainer form span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.loginContainer form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.loginContainer form input:focus {
+  outline: none;
+  border-color: #e9552b; /* Sample blue color */
+}
+
+.loginContainer form button {
+  background-color: #e9552b; /* Sample blue color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginContainer form button:hover {
+  background-color: black; /* Darker blue on hover */
+}
+
+.loginpageInput{
+  z-index: 1;
+  padding: 20px;
+}
+
+.registerEditRowAdmin{
+  justify-content: flex-start !important;
+  display: flex;
+}
+
+.tablo{
+  padding: 40px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.addeditbox{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
